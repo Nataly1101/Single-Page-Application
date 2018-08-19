@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    margin: 10px auto;
+    width: 800px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+table{
+    width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+caption{
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    font: bold 30px 'Consolas', Arial, Helvetica, sans-serif;
+    background-color: #17aeea;
+
+}
+
+th{
+    font-size: 20px;
+}
+
+th,td{
+    text-align: center;
+    border-bottom: 3px solid #f4f4f4;
+    padding: 10px;
+}
+
+td:nth-child(1), td:nth-child(2){
+    min-width: 250px;
+}
+
+.textfield-name, .textfield-phone{
+    display: none;
+}
+
+#form{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label.name, lable.phone {
+   display: inline; 
+}
+
+label.save {
+   display: none; 
+}
+input.save{
+    display: inline;
+}
+
+form label{
+    padding: 10px;
+}
+
+form button{
+    margin-left: 10px;
+    padding: 5px;
+}
