@@ -1,4 +1,4 @@
-const data = [
+let data = [
     {'name': 'Александра', 'phone': '+79097589000'},
     {'name': 'Анатолий', 'phone': '89764958234'},
     {'name': 'Наталья', 'phone': '+79167259229'},
@@ -88,16 +88,13 @@ function editUser(id){
 
         Object.keys(user).forEach((key) => {
             const label = tr.querySelector('.'+key);
-            console.log(label);
             label.className = key + ' save';
             const input = tr.querySelector('.textfield-' + key);
-            console.log(input);
             input.className = 'textfield-' + key + ' save';
             input.value = user[key];
         });
         
         editButton.innerText = 'Сохранить';
-        console.log(tr);
     }
     else {
 
